@@ -10,7 +10,7 @@ class ContaBancariaTest {
 	
 //	@BeforeEach
 //	public void setup() {
-//		
+//		// TODO: configurar código que sempre executa antes dos testes
 //	}
 
 	@Test
@@ -79,7 +79,7 @@ class ContaBancariaTest {
 		ContaBancaria cb1 = new ContaBancaria(p1, 12345, 234, 1000.0);
 		
 		try {
-			cb1.depositar(1000);
+			cb1.depositar(1000);  
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -104,7 +104,7 @@ class ContaBancariaTest {
 		ContaBancaria cb1 = new ContaBancaria(p1, 12345, 234, 1000.0);
 		
 		try {
-			cb1.depositar(400);
+			cb1.depositar(400); // TODO: testar exceção com assertThrows
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

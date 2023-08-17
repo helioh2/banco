@@ -66,11 +66,13 @@ public class ContaBancaria {
 	 */
 	public void sacar(double valor) {
 		if (valor > this.saldo) {
-			System.out.println("ERRO: SALDO INSUFICIENTE PARA SACAR");
+			System.out.println("ERRO: SALDO INSUFICIENTE PARA SACAR"); // TODO: lançar exceção
 		} else {
 			this.saldo -= valor;
 		}
 	}
+	
+	//TODO: método transferir
 	
 	
 }
