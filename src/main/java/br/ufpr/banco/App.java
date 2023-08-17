@@ -41,7 +41,16 @@ public class App
     	
     	ContaBancaria cb1 = new ContaBancaria(p1, 12345, 234, 1000.0);
     	
-    	System.out.println(cb1);
+    	ContaBancaria cb2 = new ContaBancaria(p2, 12346, 234, 2000.0);
+    	
+    	System.out.println(cb1.getSaldo());
+    	
+    	try {
+			cb1.depositar(500);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}  // teste
     	
     }
 }
